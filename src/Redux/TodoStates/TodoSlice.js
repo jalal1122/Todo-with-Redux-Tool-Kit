@@ -30,6 +30,7 @@ const todoSlice = createSlice({
         todo.updatingTodo = !todo.updatingTodo;
       }
     },
+
     deleteTodo: (state, action) => {
       const id = action.payload;
       const todos = state.todos.filter((todo) => todo.id !== id);
