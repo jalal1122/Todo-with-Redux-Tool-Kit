@@ -34,7 +34,7 @@ const AddTodo = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full flex justify-center items-center gap-4 p-10 "
+      className="w-full flex md:flex-row flex-col justify-center items-center gap-4 p-10 "
     >
       <input
         type="text"
@@ -42,7 +42,7 @@ const AddTodo = () => {
         value={input}
         onChange={(e) => setinput(e.target.value)}
         placeholder="type your todo..."
-        className="inputTodo w-1/2 border-2 border-gray-300 rounded-md p-2 text-white bg-gray-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+        className="inputTodo w-2/3  border-2 border-gray-300 rounded-md p-2 text-white bg-gray-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
       />
       <button className="btn px-3 py-2 border-2 border-black rounded bg-blue-700 text-white font-semibold">
         Add Todo
